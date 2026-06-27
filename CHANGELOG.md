@@ -2,6 +2,14 @@
 
 All notable changes to `tarikmanoar/firebase-pnv` will be documented here.
 
+## 1.0.3 - 2026-06-27
+
+### Added
+- Laravel 13 support — widen `illuminate/contracts` and `illuminate/support`
+  constraints to include `^13.0` (and `orchestra/testbench` `^11.0`,
+  `pestphp/pest` `^4.0` for dev). Matches `nativephp/mobile` 3.3+, which supports
+  Laravel 13.
+
 ## 1.0.2 - 2026-06-27
 
 ### Added
