@@ -2,6 +2,14 @@
 
 All notable changes to `tarikmanoar/firebase-pnv` will be documented here.
 
+## 1.0.1 - 2026-06-27
+
+### Fixed
+- Declare `nativephp/mobile` (`^2.6 || ^3.0`) as a runtime dependency in
+  `composer.json` `require`. The plugin contributes bridge functions to the
+  NativePHP Mobile SDK, so this is a hard dependency (was previously only in
+  `suggest`). Resolves the marketplace "Requires nativephp/mobile SDK" check.
+
 ## 1.0.0 - 2026-06-27
 
 ### Added
