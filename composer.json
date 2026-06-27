@@ -1,0 +1,67 @@
+{
+    "name": "tarikmanoar/firebase-pnv",
+    "description": "Firebase Phone Number Verification (PNV) plugin for NativePHP Mobile. Verify a device's phone number with a single tap via the carrier network — no SMS codes.",
+    "keywords": [
+        "nativephp",
+        "nativephp-plugin",
+        "laravel",
+        "android",
+        "firebase",
+        "phone-number-verification",
+        "pnv",
+        "credential-manager"
+    ],
+    "homepage": "https://github.com/tarikmanoar/firebase-pnv",
+    "license": "MIT",
+    "type": "nativephp-plugin",
+    "authors": [
+        {
+            "name": "Tarik Manoar",
+            "email": "tarikmanoar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "pestphp/pest": "^2.0|^3.0"
+    },
+    "suggest": {
+        "nativephp/mobile": "Required at runtime — this plugin contributes bridge functions to a NativePHP Mobile app."
+    },
+    "autoload": {
+        "psr-4": {
+            "Manoar\\FirebasePnv\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Manoar\\FirebasePnv\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Manoar\\FirebasePnv\\FirebasePnvServiceProvider"
+            ],
+            "aliases": {
+                "FirebasePNV": "Manoar\\FirebasePnv\\Facades\\FirebasePNV"
+            }
+        },
+        "nativephp": {
+            "manifest": "nativephp.json"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

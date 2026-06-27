@@ -1,0 +1,36 @@
+{
+    "namespace": "FirebasePnv",
+    "bridge_functions": [
+        {
+            "name": "FirebasePnv.GetVerificationSupportInfo",
+            "description": "Check whether the device/SIM(s) support Firebase PNV. Result is delivered asynchronously via the SupportInfoRetrieved event.",
+            "android": "com.tarikmanoar.plugins.firebasepnv.FirebasePnvFunctions.GetVerificationSupportInfo",
+            "ios": "FirebasePnvFunctions.GetVerificationSupportInfo"
+        },
+        {
+            "name": "FirebasePnv.GetVerifiedPhoneNumber",
+            "description": "Run the full phone-number verification flow (Credential Manager consent + Firebase PNV backend). Result is delivered asynchronously via the Verified / VerificationFailed events.",
+            "android": "com.tarikmanoar.plugins.firebasepnv.FirebasePnvFunctions.GetVerifiedPhoneNumber",
+            "ios": "FirebasePnvFunctions.GetVerifiedPhoneNumber"
+        }
+    ],
+    "events": [
+        "Manoar\\FirebasePnv\\Events\\SupportInfoRetrieved",
+        "Manoar\\FirebasePnv\\Events\\Verified",
+        "Manoar\\FirebasePnv\\Events\\VerificationFailed"
+    ],
+    "android": {
+        "min_version": 23,
+        "permissions": [
+            "android.permission.INTERNET"
+        ],
+        "dependencies": {
+            "implementation": [
+                "com.google.firebase:firebase-pnv:16.1.1"
+            ]
+        }
+    },
+    "ios": {
+        "min_version": "15.0"
+    }
+}
