@@ -2,6 +2,12 @@
 
 All notable changes to `tarikmanoar/firebase-pnv` will be documented here.
 
+## 1.0.2 - 2026-06-27
+
+### Added
+- README: status badges (Packagist version, downloads, license) and a Support
+  section (GitHub Issues / Discussions / email) for the marketplace listing.
+
 ## 1.0.1 - 2026-06-27
 
 ### Fixed

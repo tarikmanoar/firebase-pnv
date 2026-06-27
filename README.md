@@ -1,5 +1,9 @@
 # Firebase Phone Number Verification (PNV) — NativePHP Mobile Plugin
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/tarikmanoar/firebase-pnv.svg?style=flat-square)](https://packagist.org/packages/tarikmanoar/firebase-pnv)
+[![Total Downloads](https://img.shields.io/packagist/dt/tarikmanoar/firebase-pnv.svg?style=flat-square)](https://packagist.org/packages/tarikmanoar/firebase-pnv)
+[![License](https://img.shields.io/packagist/l/tarikmanoar/firebase-pnv.svg?style=flat-square)](LICENSE.md)
+
 A [NativePHP Mobile](https://nativephp.com/docs/mobile) plugin that wraps the
 official **Firebase Phone Number Verification (PNV)** Android SDK
 (`com.google.firebase:firebase-pnv`). It lets a Laravel/NativePHP app verify the
@@ -279,6 +283,13 @@ v2.x runtime (no plugin auto-loader), wire the native side in manually:
        FirebasePnvFunctions.GetVerifiedPhoneNumber(activity))
    ```
 4. Add the Gradle dependency and google-services plugin (see the Gradle reference).
+
+---
+
+## Support
+
+- 🐛 **Bugs & feature requests:** [GitHub Issues](https://github.com/tarikmanoar/firebase-pnv/issues)
+- 💬 **Questions:** start a [discussion](https://github.com/tarikmanoar/firebase-pnv/discussions) or email **tarikmanoar@gmail.com**
 
 ---
 
